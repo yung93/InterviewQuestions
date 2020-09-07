@@ -1,0 +1,11 @@
+[
+    { "SKU": "SKU01", "name": "Book1", "price": 12.49, "category": "Books", "commodityCode": "01",  "imported": false },
+    { "SKU": "SKU02", "name": "Music CD1", "price": 14.99, "category": "CDs & DVDs", "commodityCode": "02",  "imported": false },
+    { "SKU": "SKU03", "name": "Chocolate Bar", "price": 0.85, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": false },
+    { "SKU": "SKU04", "name": "Imported Box of Chocolate", "price": 10.00, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true },
+    { "SKU": "SKU05", "name": "Imported Perfume", "price": 47.5, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
+    { "SKU": "SKU06", "name": "Imported Perfume2", "price": 27.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
+    { "SKU": "SKU07", "name": "Perfume3", "price": 18.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": false },
+    { "SKU": "SKU08", "name": "Headache Pills", "price": 9.75, "category": "Health Care", "commodityCode": "04",  "imported": false },
+    { "SKU": "SKU09", "name": "Imported Box of Chocolate", "price": 11.25, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true }
+]
