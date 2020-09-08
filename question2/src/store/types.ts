@@ -1,5 +1,9 @@
+export interface RootState {
+    cart: CartState,
+}
+
 export interface CartProduct {
-    id: number,
+    SKU: string,
     quantity: number,
 }
 

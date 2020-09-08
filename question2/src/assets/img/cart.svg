@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_15" data-name="Group 15" transform="translate(-1805 126)">
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="40" height="40" transform="translate(1805 -126)" fill="none"/>
+    <g id="supermarket" transform="translate(1807.889 -121.333)">
+      <g id="Group_8" data-name="Group 8" transform="translate(0 0)">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_4" data-name="Path 4" d="M35.412,26.075a.77.77,0,0,0-.593-.3H6.668l-.741-3.852c0-.3-.445-.593-.741-.593H.741a.741.741,0,0,0,0,1.482H4.593L8.149,40.892a5.22,5.22,0,0,0,5.038,4.149H30.226a.741.741,0,0,0,0-1.482H13.335a3.416,3.416,0,0,1-2.963-1.63L32,38.966a.637.637,0,0,0,.593-.593L35.56,26.52A.732.732,0,0,0,35.412,26.075ZM31.263,37.632,9.631,40.447,6.964,27.112H33.782Z" transform="translate(0 -21.334)" fill="#867d74"/>
+        </g>
+      </g>
+      <g id="Group_10" data-name="Group 10" transform="translate(8.89 25.188)">
+        <g id="Group_9" data-name="Group 9">
+          <path id="Path_5" data-name="Path 5" d="M131.7,384a3.7,3.7,0,1,0,3.7,3.7A3.668,3.668,0,0,0,131.7,384Zm0,5.927a2.223,2.223,0,1,1,2.223-2.223A2.279,2.279,0,0,1,131.7,389.927Z" transform="translate(-128 -384)" fill="#867d74"/>
+        </g>
+      </g>
+      <g id="Group_12" data-name="Group 12" transform="translate(23.707 25.188)">
+        <g id="Group_11" data-name="Group 11">
+          <path id="Path_6" data-name="Path 6" d="M345.038,384a3.7,3.7,0,1,0,3.7,3.7A3.668,3.668,0,0,0,345.038,384Zm0,5.927a2.223,2.223,0,1,1,2.223-2.223A2.279,2.279,0,0,1,345.038,389.927Z" transform="translate(-341.334 -384)" fill="#867d74"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

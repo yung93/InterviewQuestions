@@ -1,8 +1,26 @@
+@font-face {
+  font-family: 'Keep Calm';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Keep Calm'),
+  url('./assets/fonts/KeepCalm-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bebas Kai';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bebas Kai'),
+  url('./assets/fonts/BebasKai.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Calibri', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  fontSize: 12pt;
+  color: #867D74;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

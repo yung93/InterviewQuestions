@@ -4,9 +4,18 @@
     "esModuleInterop": true,
     "target": "es6",
     "moduleResolution": "node",
-    "noUnusedLocals": false
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "outDir": "./dist"
   },
-  "include": ["routes/**/*", "controllers/**/*",
+  "include": [
+    "routes/**/*",
+    "controllers/**/*",
     "index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*"
   ]
 }

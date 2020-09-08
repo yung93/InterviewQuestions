@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense, useEffect, useState} from 'react';
+import './App.scss';
+import {Provider} from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import store from "./store";
+import DefaultLayout from "./containers/DefaultLayout";
+import {initCart} from "./store/actions/cart.action";
+import {Loading} from "./components/atoms";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        const getLocalStorage = async () => {
+            const cart = localStorage.getItem('cart');
+            if (cart) {
+                await store.dispatch(initCart(JSON.parse(cart)));
+            }
+        };
+        getLocalStorage();
+        setLoading(false);
+    }, []);
+
+    return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <Suspense fallback={<Loading />}>
+            <Switch>
+                { loading ? <Loading /> : <Route path="/" name="Home" component={DefaultLayout}/>  }
+            </Switch>
+          </Suspense>
+        </BrowserRouter>
+      </Provider>
+    );
 }
 
 export default App;

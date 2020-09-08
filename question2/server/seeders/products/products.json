@@ -1,11 +1,19 @@
 [
-    { "SKU": "SKU01", "name": "Book1", "price": 12.49, "category": "Books", "commodityCode": "01",  "imported": false },
-    { "SKU": "SKU02", "name": "Music CD1", "price": 14.99, "category": "CDs & DVDs", "commodityCode": "02",  "imported": false },
-    { "SKU": "SKU03", "name": "Chocolate Bar", "price": 0.85, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": false },
-    { "SKU": "SKU04", "name": "Imported Box of Chocolate", "price": 10.00, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true },
-    { "SKU": "SKU05", "name": "Imported Perfume", "price": 47.5, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
-    { "SKU": "SKU06", "name": "Imported Perfume2", "price": 27.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
-    { "SKU": "SKU07", "name": "Perfume3", "price": 18.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": false },
-    { "SKU": "SKU08", "name": "Headache Pills", "price": 9.75, "category": "Health Care", "commodityCode": "04",  "imported": false },
-    { "SKU": "SKU09", "name": "Imported Box of Chocolate", "price": 11.25, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true }
+    { "SKU": "SKU01", "name": "Book1", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU01.jpg","price": 12.49, "category": "Books", "commodityCode": "01",  "imported": false },
+    { "SKU": "SKU02", "name": "Music CD1", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU02.jpg", "price": 14.99, "category": "CDs & DVDs", "commodityCode": "02",  "imported": false },
+    { "SKU": "SKU03", "name": "Chocolate Bar", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU03.jpg", "price": 0.85, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": false },
+    { "SKU": "SKU04", "name": "Imported Box of Chocolate", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU04.jpg", "price": 10.00, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true },
+    { "SKU": "SKU05", "name": "Imported Perfume", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU05.jpg", "price": 47.5, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
+    { "SKU": "SKU06", "name": "Imported Perfume2", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU06.jpg", "price": 27.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true },
+    { "SKU": "SKU07", "name": "Perfume3", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU07.jpg", "price": 18.99, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": false },
+    { "SKU": "SKU08", "name": "Headache Pills", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU08.jpg", "price": 9.75, "category": "Health Care", "commodityCode": "04",  "imported": false },
+    { "SKU": "SKU09", "name": "Imported Box of Chocolate", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU09.jpg", "price": 11.25, "category": "Snacks & Desserts", "commodityCode": "03",  "imported": true },
+    { "SKU": "SKU10", "name": "Book2", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU10.jpg", "price": 11.25, "category": "Books", "commodityCode": "01",  "imported": true },
+    { "SKU": "SKU11", "name": "Book3", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU11.jpg", "price": 12.3, "category": "Books", "commodityCode": "01",  "imported": true },
+    { "SKU": "SKU12", "name": "Book4", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU12.jpg", "price": 13, "category": "Books", "commodityCode": "01",  "imported": true },
+    { "SKU": "SKU13", "name": "Music CD2", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU13.jpg", "price": 14.25, "category": "CDs & DVDs", "commodityCode": "02",  "imported": true },
+    { "SKU": "SKU14", "name": "Music CD3", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU14.jpg", "price": 15.6, "category": "CDs & DVDs", "commodityCode": "02",  "imported": true },
+    { "SKU": "SKU15", "name": "Pills2", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU15.jpg", "price": 10.1, "category": "Health Care", "commodityCode": "04",  "imported": true },
+    { "SKU": "SKU16", "name": "Pills3", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU16.jpg", "price": 11, "category": "Health Care", "commodityCode": "04",  "imported": true },
+    { "SKU": "SKU17", "name": "Makeup2", "imageUrl": "https://question2-bucket.s3-ap-southeast-1.amazonaws.com/SKU17.jpg", "price": 20.3, "category": "Makeup & Perfume", "commodityCode": "05",  "imported": true }
 ]

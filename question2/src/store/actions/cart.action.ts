@@ -1,5 +1,12 @@
-import {ADD_TO_CART, REMOVE_FROM_CART, EMPTY_CART, CartActionTypes} from "./types";
-import { CartProduct } from "../types";
+import {INIT_CART, ADD_TO_CART, REMOVE_FROM_CART, EMPTY_CART, CartActionTypes} from "./types";
+import {CartProduct, CartState} from "../types";
+
+export const initCart = (cart: CartState): CartActionTypes => {
+    return {
+        type: INIT_CART,
+        payload: cart,
+    }
+};
 
 export const addToCart = (product: CartProduct): CartActionTypes => {
     return {

@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
-import Product from '../models/product.model';
-import {IProduct, exemptCodes, TAX_RATE } from "../models/product.model";
+import Product, {IProductWithVat} from '../models/product.model';
+import { IProduct } from "../models/product.model";
 
-export const getProductsByCategory = async (req: Request, res: Response, next: NextFunction) => {
+export const getProductsGroupByCategory = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const products: IProduct[] = await Product.aggregate([
             { $match: {} },
@@ -13,9 +13,6 @@ export const getProductsByCategory = async (req: Request, res: Response, next: N
                     imageUrl: 1,
                     category: 1,
                     price: 1,
-                    vat: 1,
-                    vat: { $round: [{ $multiply: ['$price', { $cond: [{ $in: [ '$commodityCode', exemptCodes ] }, 0, TAX_RATE.VAT] }] }, 3] },
-                    importVat: { $round: [{ $multiply: ['$price', { $cond: ['$imported', TAX_RATE.IMPORT_VAT, 0] }] }, 3] },
                 }
             },
             {
@@ -27,8 +24,6 @@ export const getProductsByCategory = async (req: Request, res: Response, next: N
                             ['name', '$name'],
                             ['imageUrl', '$imageUrl'],
                             ['price', '$price'],
-                            ['vat', '$vat'],
-                            ['importVat', '$importVat'],
                         ]] }
                     }
                 }
@@ -44,6 +39,18 @@ export const getProductsByCategory = async (req: Request, res: Response, next: N
                 $sort: { 'category': 1 }
             }
         ]);
+        res.json(products);
+    } catch (e) {
+        next(e);
+    }
+};
+
+export const getProductsBySkus = async (req: Request, res: Response, next: NextFunction) => {
+    const { skus } = req.body;
+    try {
+        const products: IProductWithVat[] = await Product.find({
+            SKU: { $in: skus }
+        });
         res.json(products);
     } catch (e) {
         next(e);
