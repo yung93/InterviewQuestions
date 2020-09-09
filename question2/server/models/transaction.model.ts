@@ -18,6 +18,7 @@ export interface ITransaction extends Document {
     taxTotal: number,
     status?: string,
     createdAt?: Date,
+    updatedAt?: Date,
 }
 
 const TransactionSchema: Schema = new Schema({
@@ -25,8 +26,7 @@ const TransactionSchema: Schema = new Schema({
     subTotal: { type: Number, required: true },
     taxTotal: { type: Number, required: true },
     status: { type: String, default: TRANSACTION_STATUS.PENDING },
-    createdAt: { type: String, default: moment().toISOString() },
-}, { toObject: { virtuals: true }, toJSON: { virtuals: true } });
+}, { toObject: { virtuals: true }, toJSON: { virtuals: true }, timestamps: { createdAt: true, updatedAt: true } });
 
 TransactionSchema.virtual('expired').get(function(this: ITransaction) {
     return moment().diff(moment(this.createdAt), 'hour', true) > 1;
